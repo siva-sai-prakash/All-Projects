@@ -70,6 +70,12 @@ h1{
     background: rgb(34, 32, 32);
 }
 
+#search{
+    width: 90%;
+    font-size: 1.3rem;
+    margin: 1rem;
+    padding: 0.4rem 1rem;
+}
 
 
 /* Mobile Devices */

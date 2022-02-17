@@ -13,3 +13,23 @@
 //     }
 // }
 // btn.addEventListener('click', enableDarkMode);
+
+
+
+// Search Engine
+let names = document.querySelectorAll('h2');
+
+let searchValue = document.getElementById('search');
+
+function searchItems() {
+    names.forEach((value) => {
+        if (value.innerHTML.toLowerCase().indexOf(searchValue.value.toLowerCase()) != -1) {
+            value.parentElement.parentElement.style.display = '';
+        } else {
+            value.parentElement.parentElement.style.display = 'none';
+        }
+    }
+    )
+}
+
+searchValue.addEventListener('keyup', searchItems);
